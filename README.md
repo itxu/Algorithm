@@ -440,9 +440,8 @@ Github's Markdown supports emoji
 
 
 Check emoji signal below
-[https://www.emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com)。
+[emoji.md](./emoji.md)。
 
-or check it in my place[emoji](./emoji.md)。
 
 
 ****************************************************************************************
