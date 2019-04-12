@@ -245,7 +245,7 @@ Code|Result|
 
 |Code|Result|
 |---|---|
-|`[To The Top](#readme)`|[To The Top](#readme)|
+|`[Jump to readme](#readme)`|[Jump to readme](#readme)|
 
 <pre>
 |Code|Result|
