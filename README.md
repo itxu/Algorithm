@@ -135,9 +135,8 @@ Exampe
 </pre>
 
 
-该语法也可以实现代码高亮，见[代码高亮](#代码高亮)
 ### Hightlight
-Use a pair of back quote to hightlight word in a sentense  
+Use a pair of back quote to hightlight word in the sentense  
 `This` is the word i want to hightlight
 <pre>
 `This` is the word i want to hightlight
@@ -145,7 +144,7 @@ Use a pair of back quote to hightlight word in a sentense
 
 
 #### Wrapping
-Return or Enter button can't turn to next line  
+Return or Enter button can't turn to next line    
 Type two space at the end can turn to next line  
 Or Live a emply line between two sentence
 
@@ -166,22 +165,23 @@ Or Live a emply line between two sentence
 
 Image
 ------
-基本格式：
+Use：
 ```
 ![alt](URL title)
 ```
-alt and tilte is keyword in html (omitable):
--alt means the words displayed when faill to load image
--title means the words displayed when hover your mouse on it (quote required)
+alt and tilte is keyword in html (omitable):  
+-alt means the words displayed when faill to load image  
+-title means the words displayed when hover your mouse on it (quote required)  
 
-URL即图片的url地址，如果引用本仓库中的图片，直接使用**相对路径**就可了，如果引用其他github仓库中的图片要注意格式，即：`仓库地址/raw/分支名/图片路径`，如：
+The URL is the url address of the image. If you refer to the image in the same repository you can use the **relative path** directly. If you refer to the images in other github repositories, you should use full path like:
+
 ```
-https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
+https://github.com/520/../img.png
 ```
 
-|#|语法|效果|
+|#|Code|Result|
 |---|---|----
-|1|`![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")`|![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
+|1|`![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")`|![baidu](http://www.baidu.com/img/bdlogo.gif "Baidu logo")
 |2|`![][foryou]`|![][foryou]
 
 注意例2的写法使用了**URL标识符**的形式，在[链接](#链接)一节有介绍。
@@ -194,10 +194,9 @@ Link
 ------
 ### Outter URL
 
-|#|语法|效果|
+|#|Code|Result|
 |---|----|-----|
-|1|`[我的博客](http://blog.csdn.net/guodongxiaren "悬停显示")`|[我的博客](http://blog.csdn.net/guodongxiaren "悬停显示")|
-|2|`[我的知乎][zhihu] `|[我的知乎][zhihu] |
+|1|`[My Github Page](https://github.com/520 "I love github")`|[My Github Page](https://https://github.com/520 "i love github")|
 
 语法2由两部分组成：
 - 第一部分使用两个中括号，[ ]里的标识符（本例中zhihu），可以是数字，字母等的组合，标识符上下对应就行了（**姑且称之为URL标识符**）
@@ -206,61 +205,45 @@ Link
 >使用URL标识符能达到复用的目的，一般把全文所有的URL标识符统一放在文章末尾，这样看起来比较干净。
 >>URL标识符是我起的名字，不知道是否准确。囧。。
 
-### 链接本仓库里的URL
-
-|语法|效果|
+### Inner URL
+|Code|Result|
 |----|-----|
 |`[我的简介](/example/profile.md)`|[我的简介](/example/profile.md)|
 |`[example](./example)`|[example](./example)|
 
-### 图片链接
-给图片加链接的本质是混合图片显示语法和普通的链接语法。普通的链接中[ ]内部是链接要显示的文本，而图片链接[ ]里面则是要显示的图片。  
-直接混合两种语法当然可以，但是十分啰嗦，为此我们可以使用URL标识符的形式。
 
-|#|语法|效果|
-|---|----|:---:|
-|1|`[![weibo-logo]](http://weibo.com/linpiaochen)`|[![weibo-logo]](http://weibo.com/linpiaochen)|
-|2|`[![](/img/zhihu.png "我的知乎，欢迎关注")][zhihu]`|[![](/img/zhihu.png "我的知乎，欢迎关注")][zhihu]|
-|3|`[![csdn-logo]][csdn]`|[![csdn-logo]][csdn]|
+### Anchor
+(#title) like anchor in HTML. It can be used with any title.
 
-因为图片本身和链接本身都支持URL标识符的形式，所以图片链接也可以很简洁（见例3）。  
-注意，此时鼠标悬停时显示的文字是图片的title，而非链接本身的title了。
-> 本文URL标识符都放置于文末
 
-### 锚点
-其实呢，每一个标题都是一个锚点，和HTML的锚点（`#`）类似，比如我们 
-
-|语法|效果|
+|Code|Result|
 |---|---|
-|`[回到顶部](#readme)`|[回到顶部](#readme)|
+|`[To The Top](#readme)`|[To The Top](#readme)|
 
 不过要注意，标题中的英文字母都被转化为**小写字母**了。
 > 以前GitHub对中文支持的不好，所以中文标题不能正确识别为锚点，但是现在已经没问题啦！
 
 ## Table
 ### Inorder
-#### 语法
+
 ```
 * 昵称：果冻虾仁
 - 别名：隔壁老王
 * 英文名：Jelly
 ```
-#### 效果
 * 昵称：果冻虾仁
 - 别名：隔壁老王
 * 英文名：Jelly
 
 ### 多级无序列表
-#### 语法
 ```
-* 编程语言
-    * 脚本语言
-        * Python
+* 1
+    * 2
+        * 3
 ```
-#### 效果
-* 编程语言
-    * 脚本语言
-        * Python
+* 1
+    * 2
+        * 3
 
 ### 一级有序列表
 #### 语法
@@ -297,24 +280,14 @@ Link
       1. 这是三级的有序列表，数字在显示的时候变成了英文字母
 	 
 
-### 复选框列表
-#### 语法
+### Check Box
 ```
-- [x] 需求分析
-- [x] 系统设计
-- [x] 详细设计
-- [ ] 编码
-- [ ] 测试
-- [ ] 交付
+- [x] check
+- [ ] uncheck
 ```
-#### 效果
 
-- [x] 需求分析
-- [x] 系统设计
-- [x] 详细设计
-- [ ] 编码
-- [ ] 测试
-- [ ] 交付
+- [x] check
+- [ ] uncheck
 
 您可以使用这个功能来标注某个项目各项任务的完成情况。
 > Tip:
@@ -345,11 +318,8 @@ Link
 >>>> 平衡二叉树
 >>>>> 满二叉树
 
-代码高亮
+Code Hightlight
 ----------
-
-### 语法
-在三个反引号后面加上编程语言的名字，另起一行开始写代码，最后一行再加上三个反引号。
 
 ### 效果
 ```Java
@@ -367,6 +337,26 @@ document.getElementById("myH1").innerHTML="Welcome to my Homepage"; //javascipt
 ```cpp
 string &operator+(const string& A,const string& B) //cpp
 ```
+
+<pre>
+```Java
+public static void main(String[]args){} //Java
+```
+```c
+int main(int argc, char *argv[]) //C
+```
+```Bash
+echo "hello GitHub" #Bash
+```
+```javascript
+document.getElementById("myH1").innerHTML="Welcome to my Homepage"; //javascipt
+```
+```cpp
+string &operator+(const string& A,const string& B) //cpp
+```
+</pre>
+
+
 Table
 --------
 
