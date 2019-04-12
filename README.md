@@ -54,9 +54,9 @@ I have managed all the `markdown` grammar, please let me know or issue me if I l
 * [Link](#Link) 
     * Super-link
         *  Outter URL
-            *   Repository URL
-        *  Anchor
-        * [Image Link](#Image Link)
+        *  Repository URL
+    *  Anchor
+    * [Image Link](#Image Link)
 * [Table](#Table)
     * Inorder
     * Order
@@ -69,7 +69,7 @@ I have managed all the `markdown` grammar, please let me know or issue me if I l
 </pre>
 
 
-### 横线
+### Seperator
 -----------
 
 ***
@@ -101,36 +101,51 @@ Text
 ------
 ### General
 This is a general text
-### 单行文本
-    Hello,大家好，我是果冻虾仁。
-在一行开头加入1个Tab或者4个空格。
-### 文本块
-#### 语法1
-在连续几行的文本开头加入1个Tab或者4个空格。
+<pre>This is a general text</pre>
+### Single Line
+   Place 1 tab or 4 space in the head.
+<pre>    This is a general text</pre>
+### Block
+#### method 1
+Place 1 tab or 4 space in a row in the head
 
-    欢迎到访
-    很高兴见到您
-    祝您，早上好，中午好，下午好，晚安
+    Example
+    Example
+    Example
 
-#### 语法2
-使用一对各三个的反引号：
+<pre>
+    Example
+    Example
+    Example
+</pre>
+
+#### method 2
+Use a pair of double back quote
 ```
-欢迎到访
-我是C++码农
-你可以在知乎、CSDN、简书搜索【果冻虾仁】找到我
+Example
+Example
+Exampe
 ```
+<pre>
+```
+Example
+Example
+Exampe
+```
+</pre>
+
+
 该语法也可以实现代码高亮，见[代码高亮](#代码高亮)
-### 文字高亮
-文字高亮功能能使行内部分文字高亮，使用一对反引号。
-语法：
-```
-`linux` `网络编程` `socket` `epoll` 
-```
-效果：`linux` `网络编程` `socket` `epoll`
+### Hightlight
+Use a pair of back quote to hightlight word in a sentense
+`This` is the word i want to hightlight
+<pre>
+`This` is the word i want to hightlight
+</pre>
 
 也适合做一篇文章的tag
-#### 换行
-直接回车不能换行，  
+#### Wrapping
+Return or Enter button can't turn to next lin  
 可以在上一行文本后面补两个空格，  
 这样下一行的文本就换行了。
 
