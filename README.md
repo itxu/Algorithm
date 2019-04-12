@@ -29,11 +29,11 @@ I have managed all the `markdown` grammar, please let me know or issue me if I l
     * Disorder
     * Order
     * Check box
-* [Block Reference](#BlockReference)
-* [Code Highlighting](#CodeHighlighting)
+* [Block Reference](#Block Reference)
+* [Code Highlighting](#Code Highlighting)
 * [Table](#Table) 
 * [Emoji](#Emoji)
-* [diff use](#diffUse)
+* [diff use](#diff Use)
 
 <pre>
 ## Table of Contents
@@ -197,6 +197,12 @@ https://github.com/520/../img.png
 |---|---|----
 |1|`![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")`|![baidu](http://www.baidu.com/img/bdlogo.gif "Baidu logo")
 
+<pre>
+|#|Code|Result|
+|---|---|----
+|1|`![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")`|![baidu](http://www.baidu.com/img/bdlogo.gif "Baidu logo")
+
+</pre>
 
 Link
 ------
@@ -216,8 +222,15 @@ Link
 ### Inner URL
 |Code|Result|
 |----|-----|
-|`[我的简介](/example/profile.md)`|[我的简介](/example/profile.md)|
-|`[example](./example)`|[example](./example)|
+|`[File](/example/profile.md)`|[File](/example/profile.md)|
+|`[Folder](./example)`|[Folder](./example)|
+
+<pre>
+Code|Result|
+|----|-----|
+|`[File](/example/profile.md)`|[File](/example/profile.md)|
+|`[Folder](./example)`|[Folder](./example)|
+</pre>
 
 
 ### Anchor
@@ -276,16 +289,16 @@ Link
 
 
 ### Multiple Layer Order
+
+1. No change in first layer
+1. Changed to roman number in second layer
+1. Changed to alphabet in third layer
+
 <pre>
 1. No change in first layer
    1. Changed to roman number in second layer
       1. Changed to alphabet in third layer
 </pre>
-
-
-1. No change in first layer
-   1. Changed to roman number in second layer
-      1. Changed to alphabet in third layer
 	 
 
 ### Check Box
@@ -402,9 +415,12 @@ Unit3  | Unit4 |
 
 Emoji
 ----------
-Github's Markdown support emoji  
-:blush:。
+Github's Markdown supports emoji  
+
+:blush:  
+
 `:blush:`
+
 
 Check emoji signal below
 [https://www.emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com)。
