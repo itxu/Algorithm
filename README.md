@@ -68,21 +68,13 @@ I have managed all the `markdown` grammar, please let me know or issue me if I l
 * [DiffUse](#DiffUse)
 </pre>
 
-
-### Seperator
------------
-
-***
+****************************************************************************************
+## Seperator
 <pre>***</pre>
 or
 <pre>---</pre>
 or
 <pre>___</pre>
-
----
-
-
-
 
 ****************************************************************************************
 ## Title
@@ -150,12 +142,12 @@ Exampe
 </pre>
 
 
-#### Wrapping
+### Wrapping
 Return or Enter button can't turn to next line    
 Type two space at the end can turn to next line  
 Or Live a emply line between two sentence
 
-#### Italic Bold DeleteLine
+### Italic Bold DeleteLine
 
 |Code|Result|
 |----|-----|
@@ -458,7 +450,6 @@ or check it in my place[emoji](./emoji.md)。
 add diff keyword behind three back quote and + means add, - means remove
 
 
-
 ```diff
 + plus means to add
 - minues means  to remove
@@ -471,4 +462,3 @@ add diff keyword behind three back quote and + means add, - means remove
 ```
 </pre>
 
-****************************************************************************************
