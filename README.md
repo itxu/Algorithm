@@ -300,8 +300,8 @@ Code|Result|
 ### Multiple Layer Order
 
 1. No change in first layer
-1. Changed to roman number in second layer
-1. Changed to alphabet in third layer
+    1. Changed to roman number in second layer
+        1. Changed to alphabet in third layer
 
 <pre>
 1. No change in first layer
