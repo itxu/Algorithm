@@ -24,16 +24,16 @@ I have managed all the `markdown` grammar, please let me know or issue me if I l
         *  Outter URL
         *   Repository URL
     *  Anchor
-    * [Image Link](#Image Link)
+    * [Image Link](#Image_Link)
 * [Table](#Table)
     * Disorder
     * Order
     * Check box
-* [Block Reference](#Block Reference)
-* [Code Highlighting](#Code Highlighting)
+* [Block Reference](#Block_Reference)
+* [Code Highlighting](#Code_Highlighting)
 * [Table](#Table) 
 * [Emoji](#Emoji)
-* [diff use](#diff Use)
+* [diff_Use](#diff_Use)
 
 <pre>
 ## Table of Contents
@@ -342,7 +342,7 @@ zxcvbnm
 >>>>> Fully balanced binary tree
 </pre>
 
-Code Hightlight
+Code_Hightlight
 ----------
 
 ```Java
@@ -427,7 +427,7 @@ Check emoji signal below
 
 or check it in my place[emoji](./emoji.md)。
 
-diff Use
+diff_Use
 ---------
 add diff keyword behind three back quote and + means add, - means remove
 
