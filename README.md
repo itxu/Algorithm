@@ -26,7 +26,7 @@ I have managed all the `markdown` grammar, please let me know or issue me if I l
     *  Anchor
     * [Image Link](#Image Link)
 * [Table](#Table)
-    * Inorder
+    * Disorder
     * Order
     * Check box
 * [Block Reference](#BlockReference)
@@ -58,7 +58,7 @@ I have managed all the `markdown` grammar, please let me know or issue me if I l
     *  Anchor
     * [Image Link](#Image Link)
 * [Table](#Table)
-    * Inorder
+    * Disorder
     * Order
     * Check box
 * [Block Reference](#BlockReference)
@@ -120,6 +120,7 @@ Place 1 tab or 4 space in a row in the head
 </pre>
 
 #### method 2
+
 ```
 Example
 Example
@@ -135,7 +136,8 @@ Exampe
 
 
 ### Hightlight
-`This` is the word i want to hightlight
+`This` is the word i want to hightlight  
+
 <pre>
 `This` is the word i want to hightlight
 </pre>
@@ -159,6 +161,20 @@ Or Live a emply line between two sentence
 |`___Italic&Bold2___`|___Italic&Bold___|
 |`***~~Italic&Bold&DelectLine~~***`|***~~Italic&Bold&DelectLine1~~***|
 |`~~***Italic&Bold&DelectLine2***~~`|~~***Italic&Bold&DelectLine2***~~|
+
+<pre>
+|Code|Result|
+|----|-----|
+|`*Italic1*`|*Italic1*|
+|`_Italic2_`| _Italic2_|
+|`**Bold1**`|**Bold1**|
+|`__Bold2__`|__Bold2__|
+|`~~DelectLine~~`|~~DelectLine~~|
+|`***Italic&Bold1***`|***Italic&Bold1***|
+|`___Italic&Bold2___`|___Italic&Bold___|
+|`***~~Italic&Bold&DelectLine~~***`|***~~Italic&Bold&DelectLine1~~***|
+|`~~***Italic&Bold&DelectLine2***~~`|~~***Italic&Bold&DelectLine2***~~|
+</pre>
 
 
 Image
@@ -196,6 +212,12 @@ Link
 |---|----|-----|
 |1|`[My Github Page](https://github.com/520 "I love github")`|[My Github Page](https://github.com/520 "i love github")|
 
+<pre>
+|#|Code|Result|
+|---|----|-----|
+|1|`[My Github Page](https://github.com/520 "I love github")`|[My Github Page](https://github.com/520 "i love github")|
+</pre>
+
 语法2由两部分组成：
 - 第一部分使用两个中括号，[ ]里的标识符（本例中zhihu），可以是数字，字母等的组合，标识符上下对应就行了（**姑且称之为URL标识符**）
 - 第二部分标记实际URL。
@@ -218,11 +240,17 @@ Link
 |---|---|
 |`[To The Top](#readme)`|[To The Top](#readme)|
 
+<pre>
+|Code|Result|
+|---|---|
+|`[To The Top](#readme)`|[To The Top](#readme)|
+</pre>
+
 不过要注意，标题中的英文字母都被转化为**小写字母**了。
 > 以前GitHub对中文支持的不好，所以中文标题不能正确识别为锚点，但是现在已经没问题啦！
 
 ## Table
-### Inorder
+### Disorder
 
 * I
 - Love
@@ -235,7 +263,7 @@ Link
 </pre>
 
 
-### Multiple Layer Inorder
+### Multiple Layer Disorder
 
 * I
     * Love
@@ -261,7 +289,7 @@ Link
 </pre>
 
 
-### 多级有序列表
+### Multiple Layer Order
 和无序列表一样，有序列表也有多级结构。
 #### 语法
 ```
@@ -318,7 +346,6 @@ Link
 Code Hightlight
 ----------
 
-### Result
 ```Java
 public static void main(String[]args){} //Java
 ```
@@ -335,7 +362,6 @@ document.getElementById("myH1").innerHTML="Welcome to my Homepage"; //javascipt
 string &operator+(const string& A,const string& B) //cpp
 ```
 
-### Code
 <pre>
 ```Java
 public static void main(String[]args){} //Java
@@ -358,40 +384,35 @@ string &operator+(const string& A,const string& B) //cpp
 Table
 --------
 
-表头1  | 表头2|
+Colume1  | Colume2|
 --------- | --------|
-表格单元  | 表格单元 |
-表格单元  | 表格单元 |
+Unit1  | Unit2 |
+Unit3  | Unit4 |
 
-| 表头1  | 表头2|
-| ---------- | -----------|
-| 表格单元   | 表格单元   |
-| 表格单元   | 表格单元   |
+<pre>
+Colume1  | Colume2|
+--------- | --------|
+Unit1  | Unit2 |
+Unit3  | Unit4 |
+</pre>
 
-### 对齐
-表格可以指定对齐方式
+### Alignment
 
-| 左对齐 | 居中  | 右对齐 |
+| Left | Center  | Right |
 | :------------ |:---------------:| -----:|
 | col 3 is      | some wordy text | $1600 |
 | col 2 is      | centered        |   $12 |
 | zebra stripes | are neat        |    $1 |
 
-### 混合其他语法
-表格单元中的内容可以和其他大多数GFM语法配合使用，如：  
-#### 使用普通文本的删除线，斜体等效果
+<pre>
+| Left | Center  | Right |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |
+</pre>
 
-| 名字 | 描述 |
-| ------------- | ----------- |
-| Help      | ~~Display the~~ help window.|
-| Close     | _Closes_ a window     |
 
-#### 表格中嵌入图片（链接）
-其实前面介绍图片显示、图片链接的时候为了清晰就是放在在表格中显示的。
-
-| 图片 | 描述 |
-| ---- | ---- |
-|![baidu][baidu-logo] | 百度|
 
 Emoji
 ----------
