@@ -196,13 +196,7 @@ https://github.com/520/../img.png
 |#|Code|Result|
 |---|---|----
 |1|`![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")`|![baidu](http://www.baidu.com/img/bdlogo.gif "Baidu logo")
-|2|`![][foryou]`|![][foryou]
 
-注意例2的写法使用了**URL标识符**的形式，在[链接](#链接)一节有介绍。
->在文末有foryou的定义：
-```
-[foryou]:https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
-```
 
 Link
 ------
@@ -218,12 +212,6 @@ Link
 |1|`[My Github Page](https://github.com/520 "I love github")`|[My Github Page](https://github.com/520 "i love github")|
 </pre>
 
-语法2由两部分组成：
-- 第一部分使用两个中括号，[ ]里的标识符（本例中zhihu），可以是数字，字母等的组合，标识符上下对应就行了（**姑且称之为URL标识符**）
-- 第二部分标记实际URL。
-
->使用URL标识符能达到复用的目的，一般把全文所有的URL标识符统一放在文章末尾，这样看起来比较干净。
->>URL标识符是我起的名字，不知道是否准确。囧。。
 
 ### Inner URL
 |Code|Result|
@@ -246,8 +234,6 @@ Link
 |`[To The Top](#readme)`|[To The Top](#readme)|
 </pre>
 
-不过要注意，标题中的英文字母都被转化为**小写字母**了。
-> 以前GitHub对中文支持的不好，所以中文标题不能正确识别为锚点，但是现在已经没问题啦！
 
 ## Table
 ### Disorder
@@ -314,27 +300,33 @@ Link
 
 ## Block Reference
 
-### 常用于引用文本
-#### 文本摘自《深入理解计算机系统》P27
-　令人吃惊的是，在哪种字节顺序是合适的这个问题上，人们表现得非常情绪化。实际上术语“little endian”（小端）和“big endian”（大端）出自Jonathan Swift的《格利佛游记》一书，其中交战的两个派别无法就应该从哪一端打开一个半熟的鸡蛋达成一致。因此，争论沦为关于社会政治的争论。只要选择了一种规则并且始终如一的坚持，其实对于哪种字节排序的选择都是任意的。
-> **“端”（endian）的起源**  
-以下是Jonathan Swift在1726年关于大小端之争历史的描述：  
-“……下面我要告诉你的是，Lilliput和Blefuscu这两大强国在过去36个月里一直在苦战。战争开始是由于以下的原因：我们大家都认为，吃鸡蛋前，原始的方法是打破鸡蛋较大的一端，可是当今的皇帝的祖父小时候吃鸡蛋，一次按古法打鸡蛋时碰巧将一个手指弄破了，因此他的父亲，当时的皇帝，就下了一道敕令，命令全体臣民吃鸡蛋时打破较小的一端，违令者重罚。”
 
-### 块引用有多级结构 Multiple Construction in Block Reference
-
-> 数据结构
->> 树
->>> 二叉树
->>>> 平衡二叉树
->>>>> 满二叉树
+> **All alphabets in keyborad**  
+qwertyuiop  
+asdfghjkl  
+zxcvbnm  
 
 <pre>
-> 数据结构
->> 树
->>> 二叉树
->>>> 平衡二叉树
->>>>> 满二叉树
+> **All alphabets in keyborad**  
+qwertyuiop  
+asdfghjkl  
+zxcvbnm  
+</pre>
+
+### Multiple Construction in Block Reference
+
+> Data Structure
+>> Tree
+>>> Binary tree
+>>>> Balanced binary tree
+>>>>> Fully balanced binary tree
+
+<pre>
+> Data Structure
+>> Tree
+>>> Binary tree
+>>>> Balanced binary tree
+>>>>> Fully balanced binary tree
 </pre>
 
 Code Hightlight
@@ -417,24 +409,23 @@ Github's Markdown support emoji
 Check emoji signal below
 [https://www.emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com)。
 
-但是这个网页每次都打开**奇慢**。。所以我整理到了本repo中，大家可以直接在此查看[emoji](./emoji.md)。
+or check it in my place[emoji](./emoji.md)。
 
 diff Use
 ---------
 add diff keyword behind three back quote and + means add, - means remove
-其语法与代码高亮类似，只是在三个反引号后面写diff，
-并且其内容中，以 `+ `开头表示新增，`- `开头表示删除。
+
 
 
 ```diff
-+ 鸟宿池边树，僧敲月下门
-- 鸟宿池边树，僧推月下门
++ plus means to add
+- minues means  to remove
 ```
 
 <pre>
 ```diff
-+ 鸟宿池边树，僧敲月下门
-- 鸟宿池边树，僧推月下门
++ plus means to add
+- minues means to remove
 ```
 </pre>
 
