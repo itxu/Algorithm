@@ -120,7 +120,6 @@ Place 1 tab or 4 space in a row in the head
 </pre>
 
 #### method 2
-Use a pair of double back quote
 ```
 Example
 Example
@@ -136,7 +135,6 @@ Exampe
 
 
 ### Hightlight
-Use a pair of back quote to hightlight word in the sentense  
 `This` is the word i want to hightlight
 <pre>
 `This` is the word i want to hightlight
@@ -196,7 +194,7 @@ Link
 
 |#|Code|Result|
 |---|----|-----|
-|1|`[My Github Page](https://github.com/520 "I love github")`|[My Github Page](https://https://github.com/520 "i love github")|
+|1|`[My Github Page](https://github.com/520 "I love github")`|[My Github Page](https://github.com/520 "i love github")|
 
 语法2由两部分组成：
 - 第一部分使用两个中括号，[ ]里的标识符（本例中zhihu），可以是数字，字母等的组合，标识符上下对应就行了（**姑且称之为URL标识符**）
@@ -226,42 +224,41 @@ Link
 ## Table
 ### Inorder
 
-```
-* 昵称：果冻虾仁
-- 别名：隔壁老王
-* 英文名：Jelly
-```
-* 昵称：果冻虾仁
-- 别名：隔壁老王
-* 英文名：Jelly
+* I
+- Love
+* Github
 
-### 多级无序列表
-```
-* 1
-    * 2
-        * 3
-```
-* 1
-    * 2
-        * 3
+<pre>
+* I
+- Love
+* Github
+</pre>
 
-### 一级有序列表
-#### 语法
-就是在数字后面加一个点，再加一个空格。不过看起来起来可能不够明显。 
-```
-面向对象的三个基本特征：
 
-1. 封装
-2. 继承
-3. 多态
-```
+### Multiple Layer Inorder
 
-#### 效果
-面向对象的三个基本特征：
+* I
+    * Love
+        * Github
+        
+<pre>
+* I
+    * Love
+        * Github
+</pre>
+            
 
-1. 封装
-2. 继承
-3. 多态
+### Order
+
+1. I
+2. Love
+3. Github
+
+<pre>
+1. I
+2. Love
+3. Github
+</pre>
 
 
 ### 多级有序列表
@@ -281,13 +278,13 @@ Link
 	 
 
 ### Check Box
-```
 - [x] check
 - [ ] uncheck
-```
 
+<pre>
 - [x] check
 - [ ] uncheck
+</pre>
 
 您可以使用这个功能来标注某个项目各项任务的完成情况。
 > Tip:
@@ -321,7 +318,7 @@ Link
 Code Hightlight
 ----------
 
-### 效果
+### Result
 ```Java
 public static void main(String[]args){} //Java
 ```
@@ -338,6 +335,7 @@ document.getElementById("myH1").innerHTML="Welcome to my Homepage"; //javascipt
 string &operator+(const string& A,const string& B) //cpp
 ```
 
+### Code
 <pre>
 ```Java
 public static void main(String[]args){} //Java
