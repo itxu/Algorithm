@@ -5,6 +5,7 @@ I have managed all the `markdown` grammar, please let me know or issue me if I l
 
 ****
 
+// code
 ## Table of Contents
 * [Seperator](#Seperator)
 * [Title](#Title)
@@ -38,6 +39,9 @@ I have managed all the `markdown` grammar, please let me know or issue me if I l
 
 
 
+<pre>
+// Code:
+
 ## Table of Contents
 * [Seperator](#Seperator)
 * [Title](#Title)
@@ -55,42 +59,9 @@ I have managed all the `markdown` grammar, please let me know or issue me if I l
 * Source From GitHub Repository
 * [Link](#Link) 
 * Super-link
-* Outter URL
-* Repository URL
-* Anchor
-* [Image Link](#Image Link)
-* [Table](#Table)
-* Inorder
-* Order
-* Check box
-* [Block Reference](#BlockReference)
-* [Code Highlighting](#CodeHighlighting)
-* [Table](#Table) 
-* [Emoji](#Emoji)
-* [diff use](#diffUse)
-
-
-<pre>
-## Table of Contents
-* [Seperator](#Seperator)
-* [Title](#Title)
-* [Text](#Text)
-* General
-* Single Line
-* Multiple Line
-* Highlighting
-* Wrapping
-* Italic
-&nbsp * Bold
-&nbsp* Delete Line
-* [Image](#Image)
-* Source From Internet
-* Source From GitHub Repository
-* [Link](#Link) 
-* Super-link
-* Outter URL
-* Repository URL
-* Anchor
+*  Outter URL
+*   Repository URL
+*  Anchor
 * [Image Link](#Image Link)
 * [Table](#Table)
 * Inorder
@@ -106,11 +77,15 @@ I have managed all the `markdown` grammar, please let me know or issue me if I l
 
 ### 横线
 -----------
-***、---、___可以显示横线效果
 
 ***
+<pre>***</pre>
+
 ---
+<pre>---</pre>
+
 ___
+<pre>___</pre>
 
 
 
