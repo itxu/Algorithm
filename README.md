@@ -290,19 +290,16 @@ Link
 
 
 ### Multiple Layer Order
-和无序列表一样，有序列表也有多级结构。
-#### 语法
-```
-1. 这是一级的有序列表，数字1还是1
-   1. 这是二级的有序列表，阿拉伯数字在显示的时候变成了罗马数字
-      1. 这是三级的有序列表，数字在显示的时候变成了英文字母
-```
+<pre>
+1. No change in first layer
+   1. Changed to roman number in second layer
+      1. Changed to alphabet in third layer
+</pre>
 
-#### 效果
 
-1. 这是一级的有序列表，数字1还是1
-   1. 这是二级的有序列表，阿拉伯数字在显示的时候变成了罗马数字
-      1. 这是三级的有序列表，数字在显示的时候变成了英文字母
+1. No change in first layer
+   1. Changed to roman number in second layer
+      1. Changed to alphabet in third layer
 	 
 
 ### Check Box
@@ -314,9 +311,6 @@ Link
 - [ ] uncheck
 </pre>
 
-您可以使用这个功能来标注某个项目各项任务的完成情况。
-> Tip:
->> 在GitHub的**issue**中使用该语法是可以实时点击复选框来勾选或解除勾选的，而无需修改issue原文。
 
 ## Block Reference
 
@@ -327,21 +321,21 @@ Link
 以下是Jonathan Swift在1726年关于大小端之争历史的描述：  
 “……下面我要告诉你的是，Lilliput和Blefuscu这两大强国在过去36个月里一直在苦战。战争开始是由于以下的原因：我们大家都认为，吃鸡蛋前，原始的方法是打破鸡蛋较大的一端，可是当今的皇帝的祖父小时候吃鸡蛋，一次按古法打鸡蛋时碰巧将一个手指弄破了，因此他的父亲，当时的皇帝，就下了一道敕令，命令全体臣民吃鸡蛋时打破较小的一端，违令者重罚。”
 
-### 块引用有多级结构
-#### 语法
-```
+### 块引用有多级结构 Multiple Construction in Block Reference
+
 > 数据结构
 >> 树
 >>> 二叉树
 >>>> 平衡二叉树
 >>>>> 满二叉树
-```
-#### 效果
+
+<pre>
 > 数据结构
 >> 树
 >>> 二叉树
 >>>> 平衡二叉树
 >>>>> 满二叉树
+</pre>
 
 Code Hightlight
 ----------
@@ -416,29 +410,32 @@ Unit3  | Unit4 |
 
 Emoji
 ----------
-Github的Markdown语法支持添加emoji表情，输入不同的符号码（两个冒号包围的字符）可以显示出不同的表情。
+Github's Markdown support emoji  
+:blush:。
+`:blush:`
 
-比如`:blush:`，可以显示:blush:。
-
-具体每一个表情的符号码，可以查询GitHub的官方网页[http://www.emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com)。
+Check emoji signal below
+[https://www.emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com)。
 
 但是这个网页每次都打开**奇慢**。。所以我整理到了本repo中，大家可以直接在此查看[emoji](./emoji.md)。
 
 diff Use
 ---------
-版本控制的系统中都少不了diff的功能，即展示一个文件内容的增加与删除。
-GFM中可以显示的展示diff效果。使用绿色表示新增，红色表示删除。
-#### 语法
+add diff keyword behind three back quote and + means add, - means remove
 其语法与代码高亮类似，只是在三个反引号后面写diff，
 并且其内容中，以 `+ `开头表示新增，`- `开头表示删除。
 
-#### 效果
 
 ```diff
 + 鸟宿池边树，僧敲月下门
 - 鸟宿池边树，僧推月下门
 ```
 
-
+<pre>
+```diff
++ 鸟宿池边树，僧敲月下门
+- 鸟宿池边树，僧推月下门
+```
+</pre>
 
 --------------------------------
