@@ -248,7 +248,7 @@ Code|Result|
 </pre>
 
 
-## Table
+## List
 ### Disorder
 
 * I
