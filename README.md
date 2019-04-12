@@ -4,8 +4,6 @@ README
 I have managed all the `markdown` grammar, please let me know or issue me if I left something behind or used some inappropriate words . Thanks.
 
 ****
-
-// code
 ## Table of Contents
 * [Seperator](#Seperator)
 * [Title](#Title)
@@ -37,11 +35,7 @@ I have managed all the `markdown` grammar, please let me know or issue me if I l
 * [Emoji](#Emoji)
 * [diff use](#diffUse)
 
-
-
 <pre>
-// Code:
-
 ## Table of Contents
 * [Seperator](#Seperator)
 * [Title](#Title)
@@ -80,11 +74,9 @@ I have managed all the `markdown` grammar, please let me know or issue me if I l
 
 ***
 <pre>***</pre>
-
----
+or
 <pre>---</pre>
-
-___
+or
 <pre>___</pre>
 
 
