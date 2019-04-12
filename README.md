@@ -48,8 +48,8 @@ I have managed all the `markdown` grammar, please let me know or issue me if I l
 * Highlighting
 * Wrapping
 * Italic
-&nbsp * Bold
-&nbsp* Delete Line
+* Bold
+* Delete Line
 * [Image](#Image)
 * Source From Internet
 * Source From GitHub Repository
@@ -70,7 +70,7 @@ I have managed all the `markdown` grammar, please let me know or issue me if I l
 * [diff use](#diffUse)
 
 
-```
+<pre>
 ## Table of Contents
 * [Seperator](#Seperator)
 * [Title](#Title)
@@ -101,7 +101,7 @@ I have managed all the `markdown` grammar, please let me know or issue me if I l
 * [Table](#Table) 
 * [Emoji](#Emoji)
 * [diff use](#diffUse)
-```
+</pre>
 
 
 ### 横线
