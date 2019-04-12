@@ -38,6 +38,37 @@ I have managed all the `markdown` grammar, please let me know or issue me if I l
 
 
 
+## Table of Contents
+* [Seperator](#Seperator)
+* [Title](#Title)
+* [Text](#Text)
+* General
+* Single Line
+* Multiple Line
+* Highlighting
+* Wrapping
+* Italic
+&nbsp * Bold
+&nbsp* Delete Line
+* [Image](#Image)
+* Source From Internet
+* Source From GitHub Repository
+* [Link](#Link) 
+* Super-link
+* Outter URL
+* Repository URL
+* Anchor
+* [Image Link](#Image Link)
+* [Table](#Table)
+* Inorder
+* Order
+* Check box
+* [Block Reference](#BlockReference)
+* [Code Highlighting](#CodeHighlighting)
+* [Table](#Table) 
+* [Emoji](#Emoji)
+* [diff use](#diffUse)
+
 
 ```
 ## Table of Contents
