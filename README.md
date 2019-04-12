@@ -137,46 +137,42 @@ Exampe
 
 该语法也可以实现代码高亮，见[代码高亮](#代码高亮)
 ### Hightlight
-Use a pair of back quote to hightlight word in a sentense
+Use a pair of back quote to hightlight word in a sentense  
 `This` is the word i want to hightlight
 <pre>
 `This` is the word i want to hightlight
 </pre>
 
-也适合做一篇文章的tag
+
 #### Wrapping
-Return or Enter button can't turn to next lin  
-可以在上一行文本后面补两个空格，  
-这样下一行的文本就换行了。
+Return or Enter button can't turn to next line  
+Type two space at the end can turn to next line  
+Or Live a emply line between two sentence
 
-或者就是在两行文本直接加一个空行。
+#### Italic Bold DeleteLine
 
-也能实现换行效果，不过这个行间距有点大。
-#### 斜体、粗体、删除线
-
-|语法|效果|
+|Code|Result|
 |----|-----|
-|`*斜体1*`|*斜体1*|
-|`_斜体2_`| _斜体2_|
-|`**粗体1**`|**粗体1**|
-|`__粗体2__`|__粗体2__|
-|`这是一个 ~~删除线~~`|这是一个 ~~删除线~~|
-|`***斜粗体1***`|***斜粗体1***|
-|`___斜粗体2___`|___斜粗体2___|
-|`***~~斜粗体删除线1~~***`|***~~斜粗体删除线1~~***|
-|`~~***斜粗体删除线2***~~`|~~***斜粗体删除线2***~~|
+|`*Italic1*`|*Italic1*|
+|`_Italic2_`| _Italic2_|
+|`**Bold1**`|**Bold1**|
+|`__Bold2__`|__Bold2__|
+|`~~DelectLine~~`|~~DelectLine~~|
+|`***Italic&Bold1***`|***Italic&Bold1***|
+|`___Italic&Bold2___`|___Italic&Bold___|
+|`***~~Italic&Bold&DelectLine~~***`|***~~Italic&Bold&DelectLine1~~***|
+|`~~***Italic&Bold&DelectLine2***~~`|~~***Italic&Bold&DelectLine2***~~|
 
-    斜体、粗体、删除线可混合使用
 
-图片
+Image
 ------
 基本格式：
 ```
 ![alt](URL title)
 ```
-alt和title即对应HTML中的alt和title属性（都可省略）：
-- alt表示图片显示失败时的替换文本
-- title表示鼠标悬停在图片时的显示文本（注意这里要加引号）
+alt and tilte is keyword in html (omitable):
+-alt means the words displayed when faill to load image
+-title means the words displayed when hover your mouse on it (quote required)
 
 URL即图片的url地址，如果引用本仓库中的图片，直接使用**相对路径**就可了，如果引用其他github仓库中的图片要注意格式，即：`仓库地址/raw/分支名/图片路径`，如：
 ```
@@ -194,9 +190,9 @@ https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 [foryou]:https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 ```
 
-链接
+Link
 ------
-### 链接外部URL
+### Outter URL
 
 |#|语法|效果|
 |---|----|-----|
@@ -241,8 +237,8 @@ https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 不过要注意，标题中的英文字母都被转化为**小写字母**了。
 > 以前GitHub对中文支持的不好，所以中文标题不能正确识别为锚点，但是现在已经没问题啦！
 
-## 列表
-### 无序列表
+## Table
+### Inorder
 #### 语法
 ```
 * 昵称：果冻虾仁
@@ -324,7 +320,7 @@ https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 > Tip:
 >> 在GitHub的**issue**中使用该语法是可以实时点击复选框来勾选或解除勾选的，而无需修改issue原文。
 
-## 块引用
+## Block Reference
 
 ### 常用于引用文本
 #### 文本摘自《深入理解计算机系统》P27
@@ -371,7 +367,7 @@ document.getElementById("myH1").innerHTML="Welcome to my Homepage"; //javascipt
 ```cpp
 string &operator+(const string& A,const string& B) //cpp
 ```
-表格
+Table
 --------
 
 表头1  | 表头2|
@@ -409,7 +405,7 @@ string &operator+(const string& A,const string& B) //cpp
 | ---- | ---- |
 |![baidu][baidu-logo] | 百度|
 
-表情
+Emoji
 ----------
 Github的Markdown语法支持添加emoji表情，输入不同的符号码（两个冒号包围的字符）可以显示出不同的表情。
 
@@ -419,7 +415,7 @@ Github的Markdown语法支持添加emoji表情，输入不同的符号码（两�
 
 但是这个网页每次都打开**奇慢**。。所以我整理到了本repo中，大家可以直接在此查看[emoji](./emoji.md)。
 
-diff语法
+diff Use
 ---------
 版本控制的系统中都少不了diff的功能，即展示一个文件内容的增加与删除。
 GFM中可以显示的展示diff效果。使用绿色表示新增，红色表示删除。
@@ -437,10 +433,3 @@ GFM中可以显示的展示diff效果。使用绿色表示新增，红色表示�
 
 
 --------------------------------
-[csdn]:http://blog.csdn.net/guodongxiaren "我的博客"
-[zhihu]:https://www.zhihu.com/people/jellywong "我的知乎，欢迎关注"
-[weibo]:http://weibo.com/linpiaochen
-[baidu-logo]:http://www.baidu.com/img/bdlogo.gif "百度logo"
-[weibo-logo]:/img/weibo.png "点击图片进入我的微博"
-[csdn-logo]:/img/csdn.png "我的CSDN博客"
-[foryou]:https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
