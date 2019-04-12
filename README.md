@@ -24,16 +24,16 @@ I have managed all the `markdown` grammar, please let me know or issue me if I l
         *  Outter URL
         *   Repository URL
     *  Anchor
-    * [Image Link](#Image_Link)
-* [Table](#Table)
+    * Image Link
+* [List](#List)
     * Disorder
     * Order
     * Check box
-* [Block Reference](#Block_Reference)
-* [Code Highlighting](#Code_Highlighting)
+* [BlockReference](#BlockReference)
+* [CodeHighlighting](#CodeHighlighting)
 * [Table](#Table) 
 * [Emoji](#Emoji)
-* [diff_Use](#diff_Use)
+* [DiffUse](#DiffUse)
 
 <pre>
 ## Table of Contents
@@ -56,16 +56,16 @@ I have managed all the `markdown` grammar, please let me know or issue me if I l
         *  Outter URL
         *  Repository URL
     *  Anchor
-    * [Image Link](#Image Link)
-* [Table](#Table)
+    * Image Link
+* [List](#List)
     * Disorder
     * Order
     * Check box
-* [Block Reference](#BlockReference)
-* [Code Highlighting](#CodeHighlighting)
+* [BlockReference](#BlockReference)
+* [CodeHighlighting](#CodeHighlighting)
 * [Table](#Table) 
 * [Emoji](#Emoji)
-* [diff use](#diffUse)
+* [DiffUse](#DiffUse)
 </pre>
 
 
@@ -311,7 +311,7 @@ Code|Result|
 </pre>
 
 
-## Block Reference
+## BlockReference
 
 
 > **All alphabets in keyborad**  
@@ -342,7 +342,7 @@ zxcvbnm
 >>>>> Fully balanced binary tree
 </pre>
 
-Code_Hightlight
+CodeHightlighting
 ----------
 
 ```Java
@@ -427,7 +427,7 @@ Check emoji signal below
 
 or check it in my place[emoji](./emoji.md)。
 
-diff_Use
+DiffUse
 ---------
 add diff keyword behind three back quote and + means add, - means remove
 
