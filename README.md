@@ -4,7 +4,7 @@ README
 I have managed all the `markdown` grammar, please let me know or issue me if I left something behind or used some inappropriate words . Thanks.
 
 ****
-## Table of Contents
+# Table of Contents
 * [Seperator](#Seperator)
 * [Title](#Title)
 * [Text](#Text)
@@ -81,7 +81,7 @@ or
 
 ---
 
-Title
+#Title
 ------
 
 # h1 size 
@@ -97,7 +97,7 @@ Title
 ###### h6 size   
 <pre>###### h6 size </pre>
 
-Text
+#Text
 ------
 ### General
 This is a general text
@@ -177,7 +177,7 @@ Or Live a emply line between two sentence
 </pre>
 
 
-Image
+#Image
 ------
 Use：
 ```
@@ -204,7 +204,7 @@ https://github.com/520/../img.png
 
 </pre>
 
-Link
+#Link
 ------
 ### Outter URL
 
@@ -248,7 +248,7 @@ Code|Result|
 </pre>
 
 
-## List
+# List
 ### Disorder
 
 * I
@@ -311,7 +311,7 @@ Code|Result|
 </pre>
 
 
-## BlockReference
+#BlockReference
 
 
 > **All alphabets in keyborad**  
@@ -342,7 +342,7 @@ zxcvbnm
 >>>>> Fully balanced binary tree
 </pre>
 
-CodeHightlighting
+#CodeHighlighting
 ----------
 
 ```Java
@@ -380,7 +380,7 @@ string &operator+(const string& A,const string& B) //cpp
 </pre>
 
 
-Table
+#Table
 --------
 
 Colume1  | Colume2|
@@ -413,7 +413,7 @@ Unit3  | Unit4 |
 
 
 
-Emoji
+#Emoji
 ----------
 Github's Markdown supports emoji  
 
@@ -427,7 +427,7 @@ Check emoji signal below
 
 or check it in my place[emoji](./emoji.md)。
 
-DiffUse
+#DiffUse
 ---------
 add diff keyword behind three back quote and + means add, - means remove
 
