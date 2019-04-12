@@ -49,8 +49,8 @@ I have managed all the `markdown` grammar, please let me know or issue me if I l
 * Bold
 * Delete Line
 * [Image](#Image)
-* Source From Internet
-* Source From GitHub Repository
+    * Source From Internet
+    * Source From GitHub Repository
 * [Link](#Link) 
 * Super-link
 *  Outter URL
