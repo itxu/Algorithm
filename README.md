@@ -3,8 +3,9 @@ README
 
 I have managed all the `markdown` grammar, please let me know or issue me if I left something behind or used some inappropriate words . Thanks.
 
-****
+**********************************************
 ## Table of Contents
+===========================
 * [Seperator](#Seperator)
 * [Title](#Title)
 * [Text](#Text)
@@ -81,8 +82,11 @@ or
 
 ---
 
+
+
+
+**********************************************
 ## Title
-------
 
 # h1 size 
 <pre># h1 size </pre>
@@ -97,8 +101,13 @@ or
 ###### h6 size   
 <pre>###### h6 size </pre>
 
+
+
+
+**********************************************
 ## Text
-------
+===========================
+
 ### General
 This is a general text
 <pre>This is a general text</pre>
@@ -177,8 +186,12 @@ Or Live a emply line between two sentence
 </pre>
 
 
+
+
+
+**********************************************
 ## Image
-------
+===========================
 Use：
 ```
 ![alt](URL title)
@@ -204,8 +217,11 @@ https://github.com/520/../img.png
 
 </pre>
 
+
+
+**********************************************
 ## Link
-------
+===========================
 ### Outter URL
 
 |#|Code|Result|
@@ -248,6 +264,9 @@ Code|Result|
 </pre>
 
 
+
+
+**********************************************
 ## List
 ### Disorder
 
@@ -342,6 +361,9 @@ zxcvbnm
 >>>>> Fully balanced binary tree
 </pre>
 
+
+
+**********************************************
 ## CodeHighlighting
 ----------
 
@@ -380,6 +402,8 @@ string &operator+(const string& A,const string& B) //cpp
 </pre>
 
 
+
+**********************************************
 ## Table
 --------
 
@@ -413,6 +437,8 @@ Unit3  | Unit4 |
 
 
 
+
+**********************************************
 ## Emoji
 ----------
 Github's Markdown supports emoji  
@@ -427,6 +453,8 @@ Check emoji signal below
 
 or check it in my place[emoji](./emoji.md)。
 
+
+**********************************************
 ## DiffUse
 ---------
 add diff keyword behind three back quote and + means add, - means remove
