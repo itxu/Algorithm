@@ -19,7 +19,7 @@ For small amounts of data, even the most expensive algorithm can seem fast due t
 ### Constant time
 A constant time algorithm is one that has the same running time regardless of the size of the input. Consider the following:
 
-<pre>
+```swift
 func checkFirst(names: [String]) {
   if let first = names.first {
     print(first)
@@ -27,11 +27,11 @@ func checkFirst(names: [String]) {
     print("no names")
   }
 }
-</pre>
+```
 
 The size of the names array has no effect on the running time of this function. Whether the input has 10 items or 10 million items, this function only checks the first element of the array. Here's a visualization of this time complexity in a plot between time versus data size:
 
-![illustration](source/img1) 
+![illustration](./source/img.png "img") 
 
 As input data increases, the amount of time the algorithm takes does not change.
 For brevity, programmers use a notation known as Big O notation to represent various magnitudes of time complexity. The Big O notation for constant time is O(1).
