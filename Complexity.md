@@ -1,13 +1,13 @@
 # Complexity
 ## Table of Contents
-* [Time-Complexity](#Time complexity)
+* [Time Complexity](#Time complexity)
     * Constant time(##Constant-time)
     * Linear time
     * Quadratic 
     * Logarithmic time
     * Quasilinear time
     * other
-* [Space-complexity](#Space complexity)
+* [Space complexity](#Space complexity)
 
 ***
 
