@@ -15,7 +15,7 @@ For small amounts of data, even the most expensive algorithm can seem fast due t
 
 ---
 
-### Constant time
+### Constant time [[Top]](#Complexity)
 A constant time algorithm is one that has the same running time regardless of the size of the input. Consider the following:
 
 ```swift
@@ -37,7 +37,7 @@ For brevity, programmers use a notation known as Big O notation to represent var
 
 ---
 
-### Linear Time
+### Linear Time [[Top]](#Complexity)
 Consider the following snippet of code: 
 
 ```swift
@@ -55,15 +55,15 @@ This behavior is known as linear time complexity:
 
 Linear time complexity is usually the easiest to understand. As the amount of data increases, the running time increases by the same amount. That's why you have the straight linear graph illustrated above. The Big O notation for linear time is O(n) 
 
-```
+
 What about a function that has two loops over all the data and a calls six O(1) methods? Is it O(2n + 6) ?
 Time complexity only gives a high-level shape of the performance, so loops that happen a set number of times are not part of the calculation. All constants are dropped in the final Big O notation. In other words, O(2n + 6) is surprisingly equal to O(n).
 Although not a central concern of this book, optimizing for absolute efficiency can be important. Companies put millions of dollars of R&D into reducing the slope of those constants that Big O notation ignores. For example, a GPU optimized version of an algorithm might run 100x faster than the naive CPU version while still remaining O(n). Although we will ignore this kind of optimization, speedups like this matter.
-```
+
 
 ---
 
-### Quadratic time
+### Quadratic time[[Top]](#Complexity)
 More commonly referred to as n squared, this time complexity refers to an algorithm that takes time proportional to the square of the input size. Consider the following code:
 
 ```swift
@@ -86,13 +86,11 @@ As the size of the input data increases, the amount of time it takes for the alg
 
 The Big O notation for quadratic time is O(n^2).
 
-```
-“No matter how inefficiently a linear time _O(n) is written (multiple passes etc), for a sufficiently large n, the linear time algorithm will execute faster than a super optimized quadratic algorithm. Always. Every time.
-```
+No matter how inefficiently a linear time _O(n) is written (multiple passes etc), for a sufficiently large n, the linear time algorithm will execute faster than a super optimized quadratic algorithm. Always. Every time.
 
 ---
 
-### Logarithmic time
+### Logarithmic time [[Top]](#Complexity)
 
 So far, you've learned about the linear and quadratic time complexities wherein each element of the input is inspected at least once. However, there are scenarios in which only a subset of the input needs to be inspected, leading to a faster runtime.
 Algorithms that belong to this category of time complexity are ones that can leverage some shortcuts by making some assumptions about the input data. For instance, if you had a sorted array of integers, what is the quickest way to find if a particular value exists?
@@ -147,14 +145,13 @@ As input data increases, the time it takes to execute the algorithm increases at
 When you have an input size of 100, halving the comparisons means you save 50 comparisons. If input size was 100,000, halving the the comparisons means you save 50,000 comparisons. The more data you have, the more the halving effect scales. Thus, you can see that the graph appears to approach horizontal.
 Algorithms in this category are few, but extremely powerful in situations that allow for it. The Big O notation for logarithmic time complexity is O(log n).
 
-```
 Is it log base 2, log base 10, or the natural log?
 In the above example, log base 2 applies. However, since Big O notation only concerns itself with the shape of the performance the actual base doesn't matter.
-```
+
 
 ---
 
-### Quasilinear time
+### Quasilinear time [[Top]](#Complexity)
 
 Another common time complexity you'll encounter is quasilinear time. Quasilinear time algorithms perform worse than linear time but dramatically better than quadratic time. They are among the most common algorithms you'll deal with. An example of a quasilinear time algorithm is Swift's sort method.
 The Big-O notation for quasilinear time complexity is O(n log n) which is a multiplication of linear and logarithmic time. So quasilinear fits doesn't fit between logarithmic and linear time; it is a magnitude worse than linear time, but still better than many of the other complexities that you'll see next. Here's the graph:
@@ -165,7 +162,7 @@ The quasilinear time complexity shares a similar curve with quadratic time, but 
 
 ---
 
-### Other time complexities
+### Other time complexities [[Top]](#Complexity)
 
 The five time complexities you've encountered so far are the ones that you'll encounter in this book. Other time complexities do exist, but are far less common and tackle more complex problems that are not discussed in this book. These time complexities include polynomial time, exponential time, factorial time and more.
 It is important to note that time complexity is a high-level overview of performance, and it doesn't judge the speed of the algorithm beyond the general ranking scheme. This means that two algorithms can have the same time complexity, but one may still be much faster than the other. For small data sets, time complexity may not be an accurate measure of actual speed.
@@ -173,7 +170,7 @@ For instance, quadratic algorithms such as insertion sort can be faster than qua
 
 ---
 
-### Comparing time complexity
+### Comparing time complexity [[Top]](#Complexity)
 Suppose you wrote the following code that finds the sum of numbers from 1 to n.
 
 ```swift
@@ -213,7 +210,7 @@ This version of the function uses a trick that the Fredrick Gauss noticed in ele
 
 ---
 
-## Space complexity
+## Space complexity [[Top]](#Complexity)
 
 The time complexity of an algorithm can help predict scalability, but it isn't the only metric. Space complexity is a measure of the resources required for the algorithm to run. For computers, the resources for algorithms is memory. Consider the following code:
 
@@ -230,7 +227,7 @@ The above function will create a sorted copy of the array and print the array. T
 Since array.sorted() will produce a brand new array with the same size of array, the space complexity of printSorted is O(n). While this function is simple and elegant, there may be some situations in which you want to allocate as little memory as possible. You could revise the above function to the following:
 
 ```swift
-“func printSorted(_ array: [Int]) {
+func printSorted(_ array: [Int]) {
   // 1 
   guard !array.isEmpty else { return }
 
@@ -275,12 +272,14 @@ Since array.sorted() will produce a brand new array with the same size of array,
 This implementation respects space constraints. The overall goal is to iterate through the array multiple times, printing the next smallest value for each iteration.
 Here's what this algorithm is doing:
 
+```
 1. Check for the case if the array is empty. If it is, there's nothing to print.
 2. currentCount keeps track of the number of print statements made . minValue stores the last printed value.
 3. The algorithm begins by printing out all values matching the minValue, and updates the currentCount according to the number of print statements made.
 4. Using the while loop, the algorithm finds the lowest value bigger than minValue and stores it in currentValue.
 5. The algorithm then prints all values of currentValue inside the array while updating currentCount.
 6. minValue is set to currentValue so the next iteration will try to find the next minimum value.
+```
 
 The above algorithm only allocates memory to keep track of a few variables, so the space complexity is O(1). This is in contrast with the previous function, which allocates an entire array to create the sorted representation of the source array. 
 
