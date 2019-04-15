@@ -1,6 +1,6 @@
 # Complexity
 ## Table of Contents
-* [Time Complexity](#Time&#32;complexity)
+* [Time Complexity](#Time-complexity)
     * [Constant time](#Constant&#32;time)
     * Linear time
     * Quadratic 
