@@ -10,7 +10,7 @@
 
 ---
 
-## Time complexity  [[To Top](#Complexity)]
+## Time complexity [[Top]](#Complexity)
 For small amounts of data, even the most expensive algorithm can seem fast due to the speed of modern hardware. However, as data increases, cost of an expensive algorithm becomes increasingly apparent. Time complexity is a measure of the time required to run an algorithm as the input size increases. In this section, you'll go through the most common time complexities and learn how to identify them.
 
 ---
