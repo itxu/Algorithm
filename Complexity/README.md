@@ -10,7 +10,7 @@
 
 ---
 
-## Time complexity  
+## Time complexity  [[To Top](#Complexity)]
 For small amounts of data, even the most expensive algorithm can seem fast due to the speed of modern hardware. However, as data increases, cost of an expensive algorithm becomes increasingly apparent. Time complexity is a measure of the time required to run an algorithm as the input size increases. In this section, you'll go through the most common time complexities and learn how to identify them.
 
 ---
@@ -55,11 +55,11 @@ This behavior is known as linear time complexity:
 
 Linear time complexity is usually the easiest to understand. As the amount of data increases, the running time increases by the same amount. That's why you have the straight linear graph illustrated above. The Big O notation for linear time is O(n) 
 
-<pre>
+```
 What about a function that has two loops over all the data and a calls six O(1) methods? Is it O(2n + 6) ?
 Time complexity only gives a high-level shape of the performance, so loops that happen a set number of times are not part of the calculation. All constants are dropped in the final Big O notation. In other words, O(2n + 6) is surprisingly equal to O(n).
 Although not a central concern of this book, optimizing for absolute efficiency can be important. Companies put millions of dollars of R&D into reducing the slope of those constants that Big O notation ignores. For example, a GPU optimized version of an algorithm might run 100x faster than the naive CPU version while still remaining O(n). Although we will ignore this kind of optimization, speedups like this matter.
-</pre>
+```
 
 ---
 
@@ -86,9 +86,9 @@ As the size of the input data increases, the amount of time it takes for the alg
 
 The Big O notation for quadratic time is O(n^2).
 
-<pre>
+```
 “No matter how inefficiently a linear time _O(n) is written (multiple passes etc), for a sufficiently large n, the linear time algorithm will execute faster than a super optimized quadratic algorithm. Always. Every time.
-</pre>
+```
 
 ---
 
@@ -147,10 +147,10 @@ As input data increases, the time it takes to execute the algorithm increases at
 When you have an input size of 100, halving the comparisons means you save 50 comparisons. If input size was 100,000, halving the the comparisons means you save 50,000 comparisons. The more data you have, the more the halving effect scales. Thus, you can see that the graph appears to approach horizontal.
 Algorithms in this category are few, but extremely powerful in situations that allow for it. The Big O notation for logarithmic time complexity is O(log n).
 
-<pre>
+```
 Is it log base 2, log base 10, or the natural log?
 In the above example, log base 2 applies. However, since Big O notation only concerns itself with the shape of the performance the actual base doesn't matter.
-</pre>
+```
 
 ---
 
@@ -214,3 +214,81 @@ This version of the function uses a trick that the Fredrick Gauss noticed in ele
 ---
 
 ## Space complexity
+
+The time complexity of an algorithm can help predict scalability, but it isn't the only metric. Space complexity is a measure of the resources required for the algorithm to run. For computers, the resources for algorithms is memory. Consider the following code:
+
+```swift
+func printSorted(_ array: [Int]) {
+  let sorted = array.sorted()
+  for element in sorted {
+    print(element)
+  }
+}
+```
+
+The above function will create a sorted copy of the array and print the array. To calculate the space complexity, you analyze the memory allocations for the function.
+Since array.sorted() will produce a brand new array with the same size of array, the space complexity of printSorted is O(n). While this function is simple and elegant, there may be some situations in which you want to allocate as little memory as possible. You could revise the above function to the following:
+
+```swift
+“func printSorted(_ array: [Int]) {
+  // 1 
+  guard !array.isEmpty else { return }
+
+  // 2
+  var currentCount = 0
+  var minValue = Int.min
+
+  // 3
+  for value in array {
+    if value == minValue {
+      print(value)
+      currentCount += 1
+    }
+  }
+
+  while currentCount < array.count {
+  
+    // 4
+    var currentValue = array.max()!
+    
+    for value in array {
+      if value < currentValue && value > minValue {
+        currentValue = value
+      }
+    }
+
+    // 5
+    var printCount = 0
+    for value in array {
+      if value == currentValue {
+        print(value)
+        currentCount += 1
+      }
+    }
+
+    // 6
+    minValue = currentValue
+  }
+}
+```
+
+This implementation respects space constraints. The overall goal is to iterate through the array multiple times, printing the next smallest value for each iteration.
+Here's what this algorithm is doing:
+
+1. Check for the case if the array is empty. If it is, there's nothing to print.
+2. currentCount keeps track of the number of print statements made . minValue stores the last printed value.
+3. The algorithm begins by printing out all values matching the minValue, and updates the currentCount according to the number of print statements made.
+4. Using the while loop, the algorithm finds the lowest value bigger than minValue and stores it in currentValue.
+5. The algorithm then prints all values of currentValue inside the array while updating currentCount.
+6. minValue is set to currentValue so the next iteration will try to find the next minimum value.
+
+The above algorithm only allocates memory to keep track of a few variables, so the space complexity is O(1). This is in contrast with the previous function, which allocates an entire array to create the sorted representation of the source array. 
+
+#### Key points
+
+Time complexity is a measure on the time required to run an algorithm as the input size increases.
+Space complexity is a measure of the resources required for the algorithm to run.
+Big O notation is used to represent the general form of time and space complexity.
+Time and space complexity are high-level measures of scalability; they do not measure the actual speed of the algorithm itself.
+For small data sets, time complexity is usually irrelevant. A quasilinear algorithm can be slower than a linear algorithm. 
+
