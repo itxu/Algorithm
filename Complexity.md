@@ -1,7 +1,7 @@
 # Complexity
 ## Table of Contents
-* [Time Complexity](#Time_complexity)
-    * Constant time(#Constant_time)
+* [Time Complexity](#Time&nbspcomplexity)
+    * [Constant time](#Constant_time)
     * Linear time
     * Quadratic 
     * Logarithmic time
