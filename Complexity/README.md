@@ -1,21 +1,21 @@
 # Complexity
-* [Time Complexity](#time-complexity)
-    * [Constant time](#Constant-time)
-    * [Linear time](# Linear-time)
-    * [Quadratic](# Quadratic)
-    * [Logarithmic time](#Logarithmic-time)
-    * [Quasilinear time](#Quasilinear-time)
-    * [other](#other-time-complexities)
-* [Space complexity](#Space-complexity)
+* [Time Complexity](#1)
+    * [Constant time](#1-1)
+    * [Linear time](#1-2)
+    * [Quadratic](#1-3)
+    * [Logarithmic time](#1-4)
+    * [Quasilinear time](#1-5)
+    * [other](#1-6)
+* [Space complexity](#2)
 
 ---
 
-## Time complexity [[Top]](#Complexity)
+## <a name="1"></a>Time complexity [[Top]]
 For small amounts of data, even the most expensive algorithm can seem fast due to the speed of modern hardware. However, as data increases, cost of an expensive algorithm becomes increasingly apparent. Time complexity is a measure of the time required to run an algorithm as the input size increases. In this section, you'll go through the most common time complexities and learn how to identify them.
 
 ---
 
-### Constant time [[Top]](#Complexity)
+### <a name="1-1"></a>Constant time [[Top]]
 A constant time algorithm is one that has the same running time regardless of the size of the input. Consider the following:
 
 ```swift
@@ -37,7 +37,7 @@ For brevity, programmers use a notation known as Big O notation to represent var
 
 ---
 
-### Linear Time [[Top]](#Complexity)
+### <a name="1-2"></a>Linear Time [[Top]](#Complexity)
 Consider the following snippet of code: 
 
 ```swift
@@ -63,7 +63,7 @@ Although not a central concern of this book, optimizing for absolute efficiency 
 
 ---
 
-### Quadratic time[[Top]](#Complexity)
+### <a name="1-3"></a>Quadratic time[[Top]](#Complexity)
 More commonly referred to as n squared, this time complexity refers to an algorithm that takes time proportional to the square of the input size. Consider the following code:
 
 ```swift
@@ -90,7 +90,7 @@ No matter how inefficiently a linear time _O(n) is written (multiple passes etc)
 
 ---
 
-### Logarithmic time [[Top]](#Complexity)
+### <a name="1-4"></a>Logarithmic time [[Top]](#Complexity)
 
 So far, you've learned about the linear and quadratic time complexities wherein each element of the input is inspected at least once. However, there are scenarios in which only a subset of the input needs to be inspected, leading to a faster runtime.
 Algorithms that belong to this category of time complexity are ones that can leverage some shortcuts by making some assumptions about the input data. For instance, if you had a sorted array of integers, what is the quickest way to find if a particular value exists?
@@ -151,7 +151,7 @@ In the above example, log base 2 applies. However, since Big O notation only con
 
 ---
 
-### Quasilinear time [[Top]](#Complexity)
+### <a name="1-5"></a>Quasilinear time [[Top]](#Complexity)
 
 Another common time complexity you'll encounter is quasilinear time. Quasilinear time algorithms perform worse than linear time but dramatically better than quadratic time. They are among the most common algorithms you'll deal with. An example of a quasilinear time algorithm is Swift's sort method.
 The Big-O notation for quasilinear time complexity is O(n log n) which is a multiplication of linear and logarithmic time. So quasilinear fits doesn't fit between logarithmic and linear time; it is a magnitude worse than linear time, but still better than many of the other complexities that you'll see next. Here's the graph:
@@ -162,7 +162,7 @@ The quasilinear time complexity shares a similar curve with quadratic time, but 
 
 ---
 
-### Other time complexities [[Top]](#Complexity)
+### <a name="1-6"></a>Other time complexities [[Top]](#Complexity)
 
 The five time complexities you've encountered so far are the ones that you'll encounter in this book. Other time complexities do exist, but are far less common and tackle more complex problems that are not discussed in this book. These time complexities include polynomial time, exponential time, factorial time and more.
 It is important to note that time complexity is a high-level overview of performance, and it doesn't judge the speed of the algorithm beyond the general ranking scheme. This means that two algorithms can have the same time complexity, but one may still be much faster than the other. For small data sets, time complexity may not be an accurate measure of actual speed.
@@ -210,7 +210,7 @@ This version of the function uses a trick that the Fredrick Gauss noticed in ele
 
 ---
 
-## Space complexity [[Top]](#Complexity)
+## <a name="2"></a>Space complexity [[Top]](#Complexity)
 
 The time complexity of an algorithm can help predict scalability, but it isn't the only metric. Space complexity is a measure of the resources required for the algorithm to run. For computers, the resources for algorithms is memory. Consider the following code:
 
