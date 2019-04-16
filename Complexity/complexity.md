@@ -20,7 +20,7 @@
 |4|Logarithmic time|O(log n)|![4.png](source/4.png "4.png") |
 |5|Quasilinear time|O(n log n)|![5.png](source/5.png "5.png") |
 
-### Constant time example code:
+### Constant time O(1) example code:
 ```swift
 func checkFirst(names: [String]) {
   if let first = names.first {
@@ -31,7 +31,7 @@ func checkFirst(names: [String]) {
 }
 ```
 
-### Linear time example code:
+### Linear time O(n) example code:
 ```swift
 func printNames(names: [String]) {
   for name in names {
@@ -40,7 +40,7 @@ func printNames(names: [String]) {
 }
 ```
 
-### Quadratic time example code:
+### Quadratic time O(n^2) example code:
 ```swift
 func printNames(names: [String]) {
   for _ in names {
@@ -51,7 +51,7 @@ func printNames(names: [String]) {
 }
 ```
 
-### Logarithmic time example code:
+### Logarithmic time O(log n) example code:
 ```swift
 let numbers = [1, 3, 56, 66, 68, 80, 99, 105, 450]
 
@@ -66,12 +66,11 @@ func naiveContains(_ value: Int, in array: [Int]) -> Bool {
 }
 ```
 
-### Quasilinear time example code: none
+### Quasilinear time O(n log n) example code: none
 
 --- 
 
 ## Space Conplexity
-before:
 
 ```swift
 func printSorted(_ array: [Int]) {
@@ -80,8 +79,10 @@ func printSorted(_ array: [Int]) {
     print(element)
   }
 }
+```
 
-after:
+The above function will create a sorted copy of the array and print the array. To calculate the space complexity, you analyze the memory allocations for the function.
+Since array.sorted() will produce a brand new array with the same size of array, the space complexity of printSorted is O(n). While this function is simple and elegant, there may be some situations in which you want to allocate as little memory as possible. You could revise the above function to the following:
 
 ```swift
 func printSorted(_ array: [Int]) {
