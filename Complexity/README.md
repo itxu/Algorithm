@@ -1,8 +1,8 @@
 # Complexity
-* [Time Complexity](#time-complexity)
-    * [Constant time](#Constant-time)
-    * [Linear time](#Linear-time)
-    * [Quadratic](#Quadratic)
+* [Time Complexity](# time-complexity)
+    * [Constant time](# Constant-time)
+    * [Linear time](# Linear-time)
+    * [Quadratic](# Quadratic)
     * [Logarithmic time](#Logarithmic-time)
     * [Quasilinear time](#Quasilinear-time)
     * [other](#other-time-complexities)
