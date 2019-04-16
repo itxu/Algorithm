@@ -1,11 +1,11 @@
 # Complexity
 1. [Time Complexity](#1)
-    1.1. [Constant time](#1-1)
-    1.2. [Linear time](#1-2)
-    1.3. [Quadratic](#1-3)
-    1.4. [Logarithmic time](#1-4)
-    1.5. [Quasilinear time](#1-5)
-    1.6. [other](#1-6)
+    1. [Constant time](#1-1)
+    2. [Linear time](#1-2)
+    3. [Quadratic](#1-3)
+    4. [Logarithmic time](#1-4)
+    5. [Quasilinear time](#1-5)
+    6. [other](#1-6)
 2. [Space complexity](#2)
 
 ---
