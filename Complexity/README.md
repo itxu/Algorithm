@@ -1,6 +1,6 @@
 # Complexity
-* [Time Complexity](# time-complexity)
-    * [Constant time](# Constant-time)
+* [Time Complexity](#time-complexity)
+    * [Constant time](#Constant-time)
     * [Linear time](# Linear-time)
     * [Quadratic](# Quadratic)
     * [Logarithmic time](#Logarithmic-time)
