@@ -145,8 +145,8 @@ As input data increases, the time it takes to execute the algorithm increases at
 When you have an input size of 100, halving the comparisons means you save 50 comparisons. If input size was 100,000, halving the the comparisons means you save 50,000 comparisons. The more data you have, the more the halving effect scales. Thus, you can see that the graph appears to approach horizontal.
 Algorithms in this category are few, but extremely powerful in situations that allow for it. The Big O notation for logarithmic time complexity is O(log n).
 
-Is it log base 2, log base 10, or the natural log?
-In the above example, log base 2 applies. However, since Big O notation only concerns itself with the shape of the performance the actual base doesn't matter.
+`Is it log base 2, log base 10, or the natural log?
+In the above example, log base 2 applies. However, since Big O notation only concerns itself with the shape of the performance the actual base doesn't matter.`
 
 
 ---
@@ -285,9 +285,13 @@ The above algorithm only allocates memory to keep track of a few variables, so t
 
 #### Key points
 
-Time complexity is a measure on the time required to run an algorithm as the input size increases.
-Space complexity is a measure of the resources required for the algorithm to run.
-Big O notation is used to represent the general form of time and space complexity.
-Time and space complexity are high-level measures of scalability; they do not measure the actual speed of the algorithm itself.
-For small data sets, time complexity is usually irrelevant. A quasilinear algorithm can be slower than a linear algorithm. 
+`Time complexity` is a measure on the time required to run an algorithm as the input size increases.
+
+`Space complexity` is a measure of the resources required for the algorithm to run.
+
+`Big O notation` is used to represent the general form of time and space complexity.
+
+`Time and space complexity are high-level measures of scalability; they do not measure the actual speed of the algorithm itself.`
+
+`For small data sets, time complexity is usually irrelevant. A quasilinear algorithm can be slower than a linear algorithm. `
 
