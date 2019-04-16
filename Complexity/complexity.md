@@ -7,9 +7,7 @@
 
 |No.|Time Complexity|Code|
 |---|---|---|
-|1|Constant time|
-
-```swift
+|1|Constant time|```swift
 func checkFirst(names: [String]) {
   if let first = names.first {
     print(first)
@@ -17,5 +15,4 @@ func checkFirst(names: [String]) {
     print("no names")
   }
 }
-```
-|
+```|
