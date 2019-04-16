@@ -274,10 +274,15 @@ Here's what this algorithm is doing:
 
 
 `1. Check for the case if the array is empty. If it is, there's nothing to print.`
+
 `2. currentCount keeps track of the number of print statements made . minValue stores the last printed value.`
+
 `3. The algorithm begins by printing out all values matching the minValue, and updates the currentCount according to the number of print statements made.`
+
 `4. Using the while loop, the algorithm finds the lowest value bigger than minValue and stores it in currentValue.`
+
 `5. The algorithm then prints all values of currentValue inside the array while updating currentCount.`
+
 `6. minValue is set to currentValue so the next iteration will try to find the next minimum value.`
 
 
