@@ -1,6 +1,14 @@
 # Linked List
 A linked list is a collection of values arranged in a linear unidirectional sequence. A linked list has several theoretical advantages over contiguous storage options such as the Swift Array
 
+####Key points
+* Linked lists are linear and unidirectional. As soon as you move a reference from one node to another, you can't go back.
+* Linked lists have a O(1) time complexity for head first insertions. Arrays have O(n) time complexity for head-first insertions.
+* Conforming to Swift collection protocols such as Sequence and Collection offers a host of helpful methods for a fairly small amount of requirements.
+* Copy-on-write behavior lets you achieve value semantics.
+
+---
+
 ## Basic Linked List
 
 ![1.png](source/1.png "1.png")
@@ -70,18 +78,20 @@ extension LinkedList: CustomStringConvertible {
 }
 ```
 
+---
 
 ### Adding values to the list
 push: Adds a value at the front of the list.
 
 ```swift
-“public mutating func push(_ value: Value) {
+public mutating func push(_ value: Value) {
   head = Node(value: value, next: head)
   if tail == nil {
     tail = head
   }
 }
-
+```
+```swift
 example(of: "push") {
   var list = LinkedList<Int>()
   list.push(3)
@@ -109,7 +119,8 @@ public mutating func append(_ value: Value) {
   // 3
   tail = tail!.next
 }
-
+```
+```swift
 example(of: "append") {
   var list = LinkedList<Int>()
   list.append(1)
@@ -170,6 +181,8 @@ example(of: "inserting at a particular index") {
   print("After inserting: \(list)") // After inserting: 1 -> 2 -> -1 -> -1 -> -1 -> -1 -> 3
 }
 ```
+
+---
 
 ### Removing values from the list
 
@@ -310,9 +323,35 @@ Custom collection indexes
 ```
 
 ```swift
-
+// 1
+public var startIndex: Index {
+  return Index(node: head)
+}
+// 2
+public var endIndex: Index {
+  return Index(node: tail?.next)
+}
+// 3
+public func index(after i: Index) -> Index {
+  return Index(node: i.node?.next)
+}
+// 4
+public subscript(position: Index) -> Value {
+  return position.node!.value
+}
 ```
 
 ```swift
-
+example(of: "using collection") {
+  var list = LinkedList<Int>()
+  for i in 0...9 {
+    list.append(i)
+  }
+  print("List: \(list)")  //List: 0 -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9
+  print("First element: \(list[list.startIndex])")  //First element: 0
+  print("Array containing first 3 elements: \(Array(list.prefix(3)))") //Array containing first 3 elements: [0, 1, 2]
+  print("Array containing last 3 elements: \(Array(list.suffix(3)))")  //Array containing last 3 elements: [7, 8, 9]
+  let sum = list.reduce(0, +)
+  print("Sum of all values: \(sum)") //Sum of all values: 45
+}
 ```
