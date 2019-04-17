@@ -81,7 +81,7 @@ extension LinkedList: CustomStringConvertible {
 ---
 
 ### Adding values to the list
-push: Adds a value at the front of the list.
+#### push: Adds a value at the front of the list.
 
 ```swift
 public mutating func push(_ value: Value) {
@@ -102,7 +102,7 @@ example(of: "push") {
 }
 ```
 
-append: Adds a value at the end of the list
+#### append: Adds a value at the end of the list
 
 ```swift
 public mutating func append(_ value: Value) {
@@ -131,7 +131,7 @@ example(of: "append") {
 }
 ```
 
-insert(after:): Adds a value after a particular node of the list.
+#### insert(after:): Adds a value after a particular node of the list.
 
 ```swift
 public func node(at index: Int) -> Node<Value>? {
@@ -186,7 +186,7 @@ example(of: "inserting at a particular index") {
 
 ### Removing values from the list
 
-pop operations
+#### pop operations
 
 ```swift
 @discardableResult
@@ -257,7 +257,7 @@ example(of: "removing the last node") {
 }
 ```
 
-remove(after:) operations
+#### remove(after:) operations
 
 ```swift
 “@discardableResult
@@ -291,7 +291,7 @@ example(of: "removing a node after a particular node") {
 }
 ```
 
-Custom collection indexes
+#### Custom collection indexes
 
 ```swift
 “extension LinkedList: Collection {
