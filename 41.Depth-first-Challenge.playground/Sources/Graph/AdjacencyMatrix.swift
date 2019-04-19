@@ -1,6 +1,3 @@
-// Copyright (c) 2018 Razeware LLC
-// For full license & permission details, see LICENSE.markdown.
-
 public class AdjacencyMatrix<T>: Graph {
   
   private var vertices: [Vertex<T>] = []

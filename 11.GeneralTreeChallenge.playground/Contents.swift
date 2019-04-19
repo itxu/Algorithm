@@ -1,5 +1,4 @@
-// Copyright (c) 2018 Razeware LLC
-// For full license & permission details, see LICENSE.markdown.
+
 //: # General Tree Challenge
 //: Print all the values in a tree in an order based on their level.
 //: Nodes belonging in the same level should be printed in the same line.

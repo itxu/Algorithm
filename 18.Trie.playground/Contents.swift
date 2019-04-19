@@ -1,5 +1,3 @@
-// Copyright (c) 2018 Razeware LLC
-// For full license & permission details, see LICENSE.markdown.
 
 
 // Xcode 10 Swift 4.2 Note: You may see messages

@@ -1,5 +1,3 @@
-// Copyright (c) 2018 Razeware LLC
-// For full license & permission details, see LICENSE.markdown.
 
 // MARK: - Array Based Queue
 public struct QueueArray<T>: Queue {

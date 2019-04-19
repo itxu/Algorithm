@@ -1,5 +1,3 @@
-// Copyright (c) 2018 Razeware LLC
-// For full license & permission details, see LICENSE.markdown.
 
 var graph = AdjacencyList<Int>()
 let one = graph.createVertex(data: 1)

@@ -1,6 +1,3 @@
-// Copyright (c) 2018 Razeware LLC
-// For full license & permission details, see LICENSE.markdown.
-
 
 // MARK: - LinkedList-based Queue
 public class QueueLinkedList<T>: Queue {

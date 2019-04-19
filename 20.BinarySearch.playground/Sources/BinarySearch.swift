@@ -1,6 +1,3 @@
-// Copyright (c) 2018 Razeware LLC
-// For full license & permission details, see LICENSE.markdown.
-
 public extension RandomAccessCollection where Element: Comparable {
   
   func binarySearch(for value: Element, in range: Range<Index>? = nil) -> Index? {

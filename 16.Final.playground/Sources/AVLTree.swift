@@ -1,6 +1,3 @@
-// Copyright (c) 2018 Razeware LLC
-// For full license & permission details, see LICENSE.markdown.
-
 public struct AVLTree<Element: Comparable> {
   
   public private(set) var root: AVLNode<Element>?

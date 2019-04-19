@@ -1,6 +1,3 @@
-// Copyright (c) 2018 Razeware LLC
-// For full license & permission details, see LICENSE.markdown.
-
 public class Trie<CollectionType: Collection & Hashable> where CollectionType.Element: Hashable {
   
   public typealias Node = TrieNode<CollectionType.Element>

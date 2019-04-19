@@ -1,6 +1,3 @@
-// Copyright (c) 2018 Razeware LLC
-// For full license & permission details, see LICENSE.markdown.
-
 public func mergeSort<Element>(_ array: [Element]) -> [Element] where Element: Comparable {
   guard array.count > 1 else {
     return array

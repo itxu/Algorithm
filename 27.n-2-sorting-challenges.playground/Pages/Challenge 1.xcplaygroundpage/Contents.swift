@@ -1,5 +1,4 @@
-// Copyright (c) 2018 Razeware LLC
-// For full license & permission details, see LICENSE.markdown.
+
 //: # n² Sorting Challenges
 //: ## Challenge 1
 //: Given a collection of Equatable elements, bring all instances of a given

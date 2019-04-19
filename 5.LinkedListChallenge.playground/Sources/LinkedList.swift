@@ -1,6 +1,3 @@
-// Copyright (c) 2018 Razeware LLC
-// For full license & permission details, see LICENSE.markdown.
-
 public struct LinkedList<Value> {
     
     public var head: Node<Value>?
